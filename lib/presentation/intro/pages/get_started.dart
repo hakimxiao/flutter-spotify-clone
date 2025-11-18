@@ -4,6 +4,7 @@ import 'package:spotify_app/common/widgets/button/basic_app_button.dart';
 import 'package:spotify_app/core/configs/assets/app_images.dart';
 import 'package:spotify_app/core/configs/assets/app_vectors.dart';
 import 'package:spotify_app/core/configs/theme/app_colors.dart';
+import 'package:spotify_app/presentation/choose_mode/pages/choose_mode.dart';
 
 class GetStarted extends StatelessWidget {
   const GetStarted({super.key});
@@ -51,7 +52,14 @@ class GetStarted extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                BasicAppButton(onPressed: () {}, title: 'Get Started'),
+                BasicAppButton(
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ChooseMode()),
+                  ),
+                  title: 'Get Started',
+                ),
+                const SizedBox(height: 50),
               ],
             ),
           ),
