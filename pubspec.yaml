@@ -8,11 +8,13 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.8
+  firebase_auth: ^6.1.2
   firebase_core: ^4.2.1
   flutter:
     sdk: flutter
   flutter_bloc: null
   flutter_svg: ^2.2.2
+  get_it: ^9.1.0
   hydrated_bloc: 9.1.5
   path_provider: null
 
