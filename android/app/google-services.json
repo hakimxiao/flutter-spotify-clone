@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "606301812782",
+    "project_id": "latihan-flutter-93e64",
+    "storage_bucket": "latihan-flutter-93e64.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606301812782:android:4cab8ccc1ec243f67b07bf",
+        "android_client_info": {
+          "package_name": "com.example.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606301812782-b6gonfe42k29098cm9ms9lr63015di2h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatapp",
+            "certificate_hash": "6d3629d65a72ab685a2332502ac3bd655f686224"
+          }
+        },
+        {
+          "client_id": "606301812782-a1ecr9rrso2hiciq9d7esm6v3r6gejsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR7f094Aat0XDbLpPFRNpK6KhqARPXU6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606301812782-a1ecr9rrso2hiciq9d7esm6v3r6gejsd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "606301812782-9096lu7t2sf0demohjnd3jvbjfr3suev.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chatapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606301812782:android:6d9a32b174a41b417b07bf",
+        "android_client_info": {
+          "package_name": "com.example.spotify_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606301812782-a1ecr9rrso2hiciq9d7esm6v3r6gejsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR7f094Aat0XDbLpPFRNpK6KhqARPXU6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606301812782-a1ecr9rrso2hiciq9d7esm6v3r6gejsd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "606301812782-9096lu7t2sf0demohjnd3jvbjfr3suev.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chatapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
