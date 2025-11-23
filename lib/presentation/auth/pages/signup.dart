@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:spotify_app/common/widgets/appBar/app_bar.dart';
 import 'package:spotify_app/common/widgets/button/basic_app_button.dart';
+import 'package:spotify_app/common/widgets/snackbar/app_snackbar.dart';
 import 'package:spotify_app/core/configs/assets/app_vectors.dart';
 import 'package:spotify_app/data/models/auth/create_user_req.dart';
 import 'package:spotify_app/domain/usecases/auth/signup.dart';
@@ -48,8 +49,14 @@ class SignupPage extends StatelessWidget {
 
                 result.fold(
                   (l) {
-                    var snackbar = SnackBar(content: Text(l));
-                    ScaffoldMessenger.of(context).showSnackBar(snackbar);
+                    final errorMessage = l.isEmpty ? "Pendaftaran gagal." : l;
+
+                    AppSnackbar.show(
+                      context,
+                      message: errorMessage,
+                      icon: Icons.info_outline,
+                      color: Colors.tealAccent,
+                    );
                   },
                   (r) {
                     Navigator.pushAndRemoveUntil(
@@ -116,7 +123,7 @@ class SignupPage extends StatelessWidget {
           TextButton(
             onPressed: () => Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => const SigninPage()),
+              MaterialPageRoute(builder: (context) => SigninPage()),
             ),
             child: Text('Login', style: TextStyle(fontWeight: FontWeight.bold)),
           ),
